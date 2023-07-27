@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="UserViewModel"
+            type="com.example.newsapp.viewmodel.UserViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_20"
+        android:background="@color/white"
+        tools:context=".ui.main.SplashFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="125dp"
+                android:layout_height="157dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon_play" />
+
+            <EditText
+                android:id="@+id/etUserNameSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:hint="@string/common_username"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="@dimen/margin_top_20"
+                android:imeOptions="actionNext"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:padding="@dimen/padding_10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_sign_in"
+                android:autofillHints="username"/>
+            <EditText
+                android:id="@+id/etMailSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:hint="@string/common_gmail"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:imeOptions="actionNext"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:padding="@dimen/padding_10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_18"
+                android:autofillHints="emailAddress"/>
+            <EditText
+                android:id="@+id/etPasswordSignUp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:background="@drawable/custom_edittext"
+                android:layout_height="60dp"
+                android:drawableRight="@drawable/eyeslash_white"
+                android:hint="@string/common_password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_18"
+                android:autofillHints="password" />
+            <EditText
+                android:id="@+id/etCofirmPasswordSignUp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:background="@drawable/custom_edittext"
+                android:layout_height="@dimen/height_60"
+                android:drawableRight="@drawable/eyeslash_white"
+                android:hint="@string/confirm_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="@dimen/padding_10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_18"
+                android:autofillHints="password" />
+            <TextView
+                android:id="@+id/tvSignUp_SignUp"
+                android:layout_marginTop="@dimen/margin_top_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_button"
+                android:layout_height="@dimen/height_50"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/sign_up_tv"
+                android:textSize="@dimen/text_login"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:layout_gravity="center"
+                android:id="@+id/tvToLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_an_account"
+                android:textSize="@dimen/text_16"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

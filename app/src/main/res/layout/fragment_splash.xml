@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.newsapp.viewmodel.UserViewModel" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.SplashFragment">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/ivSplash"
+            android:layout_width="@dimen/height_130"
+            android:layout_height="@dimen/height_130"
+            android:src="@drawable/icon_play"
+            />
+
+    </LinearLayout>
+</layout>
